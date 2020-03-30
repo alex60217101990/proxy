@@ -1,5 +1,6 @@
 package consts
 
 const (
-	ProxySocket = "/tmp/proxy.sock"
+	ProxySocket   = "/tmp/proxy.sock"
+	MaxBufferSize = 1024
 )
