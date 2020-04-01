@@ -12,6 +12,7 @@ type ProtocolType int8
 const (
 	TCP ProtocolType = iota + 1
 	UDP
+	TLS
 )
 
 var (
@@ -20,11 +21,14 @@ var (
 		"tcp": TCP,
 		"UDP": UDP,
 		"udp": UDP,
+		"TLS": TLS,
+		"tls": TLS,
 	}
 
 	_ProtocolTypeValueToName = map[ProtocolType]string{
 		TCP: "tcp",
 		UDP: "udp",
+		TLS: "tls",
 	}
 )
 
